@@ -1,0 +1,119 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+              url("https://images.unsplash.com/photo-1519125323398-675f0ddb6308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fHNpZ258ZW58MHx8fHwxNjY4NzY5NzM1&ixlib=rb-1.2.1&q=80&w=1080") 
+              no-repeat center center fixed;
+  background-size: cover;
+  animation: backgroundAnimation 10s ease-in-out infinite;
+}
+
+@keyframes backgroundAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.auth-box {
+  background: rgba(14, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 400px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-box:hover {
+  transform: translateY(-10px);
+}
+
+.auth-title {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+.auth-form p {
+  margin-bottom: 25px;
+  color: #ddd;
+  text-align: center;
+}
+
+.auth-form a {
+  color: #ff9ff3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.auth-form a:hover {
+  color: #fff;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.auth-input::placeholder {
+  color: #ccc;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background: #06eedb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.auth-button:hover {
+  background: #02475c;
+  transform: translateY(-5px);
+}
+
+.auth-toggle {
+  margin-top: 1rem;
+  color: #ddd;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.toggle-link {
+  color: #ff9ff3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggle-link:hover {
+  color: #fff;
+}
+
